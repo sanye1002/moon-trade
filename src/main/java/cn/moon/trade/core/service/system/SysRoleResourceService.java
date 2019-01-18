@@ -1,0 +1,18 @@
+package cn.moon.trade.core.service.system;
+
+
+import cn.moon.trade.core.entity.system.SysResource;
+import cn.moon.trade.core.entity.system.SysRoleResource;
+import com.baomidou.mybatisplus.service.IService;
+
+import java.util.List;
+
+/**
+ * @author moon
+ * @version 2018/4/16/9:01
+ */
+public interface SysRoleResourceService extends IService<SysRoleResource> {
+
+    List<SysResource> findAllResourceByRoleId(String rid);
+
+}
